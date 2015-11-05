@@ -1,10 +1,9 @@
 /*
  
-     File: MyImageView.h 
- Abstract: A UIImageView subclass that implements the UIResponder event-handling
- method touchesBegan: withEvent:
- in order to receive finger touch event messages. Any finger touch events in this
- view will start the movie playing.
+     File: MyStreamingMovieViewController.h 
+ Abstract: A UIViewController controller subclass that loads the SecondView nib file that contains its view.
+ Contains an action method that is called when the Play Movie button is pressed to play the movie.
+ Provides a text edit control for the user to enter a movie URL.
   
   Version: 1.3 
   
@@ -53,15 +52,15 @@
 
 #import <UIKit/UIKit.h>
 #import "MyMovieViewController.h"
+#import "MoviePlayerAppDelegate.h"
 
+@interface MyStreamingMovieViewController : UIViewController <UITextFieldDelegate> {
 
-@interface MyImageView : UIImageView {
-
-    MyMovieViewController *viewController;
+	UITextField	*movieURLTextField;
 }
 
-@property (nonatomic, retain) IBOutlet MyMovieViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITextField *movieURLTextField;
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+-(IBAction)playMovieButtonPressed:(id)sender;
 
 @end

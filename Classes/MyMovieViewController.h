@@ -1,10 +1,8 @@
 /*
 
-    File: MoviePlayerAppDelegate.h 
-Abstract:  A simple UIApplication delegate class that adds the MyMovieViewController
-view to the window as a subview. 
-Also sets the application settings based on the defaults in the application
-bundle.
+    File: MyMovieViewController.h 
+Abstract:  A UIViewController controller subclass that loads the MoviePlayer nib
+file that contains its view.
  
  Version: 1.3 
  
@@ -52,21 +50,25 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 */
 
 #import <UIKit/UIKit.h>
-#import "MyMovieViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface MoviePlayerAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-	
-	UIWindow *window;
-	MPMoviePlayerController *moviePlayer;
-    UITabBarController *tabBarController;
+#import "MyOverlayView.h"
+
+// Notification string used for touches to the overlay view
+extern NSString * const OverlayViewTouchNotification;
+
+@interface MyMovieViewController : UIViewController {
+
+    NSURL *movieURL;
+    MyOverlayView *overlayView;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
-@property (readwrite, retain) MPMoviePlayerController *moviePlayer;
+@property (nonatomic, retain) IBOutlet MyOverlayView *overlayView;
+@property (nonatomic, retain) NSURL *movieURL;
 
--(void)initAndPlayMovie:(NSURL *)movieURL;
--(void)setMoviePlayerUserSettings;
+-(NSURL *)localMovieURL;
+-(IBAction)playMovieButtonPressed:(id)sender;
+-(IBAction)overlayViewButtonPress:(id)sender;
+-(void)overlayViewTouches:(NSNotification *)notification;
 
 @end
-

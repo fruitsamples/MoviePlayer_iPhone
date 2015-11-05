@@ -1,10 +1,8 @@
 /*
-     File: MyOverlayView.m
- Abstract: A UIView subclass that is added as a subview to the movie player
- window. This view and its associated controls will display on 
- top of the movie window and receive any touch events while the 
- movie plays underneath it.
- 
+     File: MyMovieViewController.m
+ Abstract:  A UIViewController controller subclass that loads the MoviePlayer nib
+file that contains its view.
+
   Version: 1.3
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -49,67 +47,79 @@
  
  */
 
-#import "MyOverlayView.h"
 #import "MyMovieViewController.h"
+#import "MoviePlayerAppDelegate.h"
 
-@implementation MyOverlayView
+NSString * const OverlayViewTouchNotification = @"overlayViewTouch";
 
-// MPMoviePlayerController will play movies full-screen in 
-// landscape mode, so we must rotate MyOverlayView 90 degrees and 
-// translate it to the center of the screen so when it draws
-// on top of the playing movie it will display in landscape 
-// mode to match the movie player orientation.
-//
-- (void)awakeFromNib
+@implementation MyMovieViewController
+
+@synthesize overlayView;
+@synthesize movieURL;
+
+-(IBAction)playMovieButtonPressed:(id)sender
 {
-	CGAffineTransform transform = self.transform;
-
-	// Rotate the view 90 degrees. 
-	transform = CGAffineTransformRotate(transform, (M_PI / 2.0));
-
-    UIScreen *screen = [UIScreen mainScreen];
-    // Translate the view to the center of the screen
-    transform = CGAffineTransformTranslate(transform, 
-        ((screen.bounds.size.height) - (self.bounds.size.height))/2, 
-        0);
-	self.transform = transform;
+    MoviePlayerAppDelegate *appDelegate = (MoviePlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	CGRect newFrame = self.frame;
-	newFrame.origin.x = 190;
-	self.frame = newFrame;
+	// initialize a new MPMoviePlayerController object with the specified URL, and
+	// play the movie
+	[appDelegate initAndPlayMovie:[self localMovieURL]];
+	
+	// now display an overlay window with some controls above the playing movie
+	
+	NSArray *windows = [[UIApplication sharedApplication] windows];
+	if ([windows count] > 1)
+	{
+		// Locate the movie player window
+		UIWindow *moviePlayerWindow = [[UIApplication sharedApplication] keyWindow];
+		// Add our overlay view to the movie player's subviews so it is 
+		// displayed above it.
+		[moviePlayerWindow addSubview:self.overlayView];
+	}
+}
+
+// return a URL for the movie file in our bundle
+-(NSURL *)localMovieURL
+{
+    if (self.movieURL == nil)
+    {
+        NSBundle *bundle = [NSBundle mainBundle];
+        if (bundle) 
+        {
+            NSString *moviePath = [bundle pathForResource:@"Movie" ofType:@"m4v"];
+            if (moviePath)
+            {
+                self.movieURL = [NSURL fileURLWithPath:moviePath];
+            }
+        }
+    }
+    
+    return self.movieURL;
+}
+
+// Touches in the overlay view (not in the overlay button)
+// post the "overlayViewTouch" notification and will send
+// the overlayViewTouches: message
+- (void)overlayViewTouches:(NSNotification *)notification
+{
+    // Handle touches to the overlay view (MyOverlayView) here... 
+}
+
+// Action method for the overlay view (MyOverlayView) button
+-(IBAction)overlayViewButtonPress:(id)sender
+{
+    // Handle touches to the overlay view 
+    // button here... 
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return YES;
 }
 
 - (void)dealloc {
-	[super dealloc];
-}
-
-// Handle any touches to the overlay view
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch* touch = [touches anyObject];
-    if (touch.phase == UITouchPhaseBegan)
-    {
-        // IMPORTANT:
-        // Touches to the overlay view are being handled using
-        // two different techniques as described here:
-        //
-        // 1. Touches to the overlay view (not in the button)
-        //
-        // On touches to the view we will post a notification
-        // "overlayViewTouch". MyMovieViewController is registered 
-        // as an observer for this notification, and the 
-        // overlayViewTouches: method in MyMovieViewController
-        // will be called. 
-        //
-        // 2. Touches to the button 
-        //
-        // Touches to the button in this same view will 
-        // trigger the MyMovieViewController overlayViewButtonPress:
-        // action method instead.
-
-        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-        [nc postNotificationName:OverlayViewTouchNotification object:nil];
-
-    }    
+    [movieURL release];
+    [super dealloc];
 }
 
 

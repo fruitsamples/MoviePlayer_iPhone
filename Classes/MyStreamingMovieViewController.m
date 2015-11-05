@@ -1,9 +1,8 @@
 /*
-     File: MyOverlayView.m
- Abstract: A UIView subclass that is added as a subview to the movie player
- window. This view and its associated controls will display on 
- top of the movie window and receive any touch events while the 
- movie plays underneath it.
+     File: MyStreamingMovieViewController.m
+ Abstract: A UIViewController controller subclass that loads the SecondView nib file that contains its view.
+ Contains an action method that is called when the Play Movie button is pressed to play the movie.
+ Provides a text edit control for the user to enter a movie URL.
  
   Version: 1.3
  
@@ -49,68 +48,45 @@
  
  */
 
-#import "MyOverlayView.h"
-#import "MyMovieViewController.h"
+#import "MyStreamingMovieViewController.h"
 
-@implementation MyOverlayView
 
-// MPMoviePlayerController will play movies full-screen in 
-// landscape mode, so we must rotate MyOverlayView 90 degrees and 
-// translate it to the center of the screen so when it draws
-// on top of the playing movie it will display in landscape 
-// mode to match the movie player orientation.
-//
-- (void)awakeFromNib
+@implementation MyStreamingMovieViewController
+
+@synthesize movieURLTextField;
+
+-(IBAction)playMovieButtonPressed:(id)sender
 {
-	CGAffineTransform transform = self.transform;
-
-	// Rotate the view 90 degrees. 
-	transform = CGAffineTransformRotate(transform, (M_PI / 2.0));
-
-    UIScreen *screen = [UIScreen mainScreen];
-    // Translate the view to the center of the screen
-    transform = CGAffineTransformTranslate(transform, 
-        ((screen.bounds.size.height) - (self.bounds.size.height))/2, 
-        0);
-	self.transform = transform;
-	
-	CGRect newFrame = self.frame;
-	newFrame.origin.x = 190;
-	self.frame = newFrame;
+	// has the user entered a movie URL?
+	if (self.movieURLTextField.text.length > 0)
+	{
+		NSURL *movieURL = [NSURL URLWithString:self.movieURLTextField.text];
+		if (movieURL)
+		{
+			if ([movieURL scheme])	// sanity check on the URL
+			{
+				MoviePlayerAppDelegate *appDelegate = (MoviePlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+				
+				// initialize a new MPMoviePlayerController object with the specified URL, and
+				// play the movie
+				[appDelegate initAndPlayMovie:movieURL];
+			}
+		}
+	}
 }
 
-- (void)dealloc {
-	[super dealloc];
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+	UITextField	*movieURLText = self.movieURLTextField;
+	// When the user presses return, take focus away from the text field so that the keyboard is dismissed.
+	if (theTextField == movieURLText) {
+		[movieURLText resignFirstResponder];
+	}
+	return YES;
 }
 
-// Handle any touches to the overlay view
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch* touch = [touches anyObject];
-    if (touch.phase == UITouchPhaseBegan)
-    {
-        // IMPORTANT:
-        // Touches to the overlay view are being handled using
-        // two different techniques as described here:
-        //
-        // 1. Touches to the overlay view (not in the button)
-        //
-        // On touches to the view we will post a notification
-        // "overlayViewTouch". MyMovieViewController is registered 
-        // as an observer for this notification, and the 
-        // overlayViewTouches: method in MyMovieViewController
-        // will be called. 
-        //
-        // 2. Touches to the button 
-        //
-        // Touches to the button in this same view will 
-        // trigger the MyMovieViewController overlayViewButtonPress:
-        // action method instead.
-
-        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-        [nc postNotificationName:OverlayViewTouchNotification object:nil];
-
-    }    
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return YES;
 }
-
 
 @end

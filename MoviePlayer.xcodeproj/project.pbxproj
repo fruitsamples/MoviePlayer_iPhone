@@ -11,29 +11,21 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2B9952410EF1D1AD000C1F28 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B9952400EF1D1AD000C1F28 /* Settings.bundle */; };
+		5360AB730F9555EE004386E1 /* local.png in Resources */ = {isa = PBXBuildFile; fileRef = 5360AB710F9555EE004386E1 /* local.png */; };
+		5360AB740F9555EE004386E1 /* streaming.png in Resources */ = {isa = PBXBuildFile; fileRef = 5360AB720F9555EE004386E1 /* streaming.png */; };
 		53E4BB070DDB491E0033B3CF /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4BB050DDB491E0033B3CF /* MyImageView.m */; };
 		53F69CEE0DDB4A390051C004 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F69CEC0DDB4A390051C004 /* MainWindow.xib */; };
-		848A4F8C0DD3408800267E4B /* Root.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848A4F8A0DD3408800267E4B /* Root.plist */; };
-		848A4FA30DD3410D00267E4B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848A4F6B0DD3400A00267E4B /* Settings.bundle */; };
+		8487EAAA0F8A5E2B00B9E9B0 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8487EAA80F8A5E2B00B9E9B0 /* SecondView.xib */; };
 		848A50330DD350F100267E4B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848A50320DD350F100267E4B /* MediaPlayer.framework */; };
-		84D681F10DD2BDF80056CCDD /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D681F00DD2BDF80056CCDD /* MyViewController.m */; };
+		849C87B00F897A7D005A6DDE /* MyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */; };
+		849C88110F899862005A6DDE /* MyStreamingMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */; };
 		D60DAAC70DDA11800003B166 /* preview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60DAAC60DDA11800003B166 /* preview.jpg */; };
 		D60DAB500DDA30630003B166 /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D60DAB4F0DDA30630003B166 /* Movie.m4v */; };
-		D638C73C0DD3B84E00DA5949 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848A4F890DD3408800267E4B /* Icon.png */; };
 		D6629DA40E7EFF4C00E113A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6629DA20E7EFF4C00E113A3 /* CoreGraphics.framework */; };
 		D6629DA50E7EFF4C00E113A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6629DA30E7EFF4C00E113A3 /* QuartzCore.framework */; };
 		D6854D240E7B42EE00E66CAC /* MyOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854D230E7B42EE00E66CAC /* MyOverlayView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		848A4F8D0DD3409C00267E4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 848A4F6A0DD3400A00267E4B;
-			remoteInfo = Settings;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,24 +34,27 @@
 		1D6058910D05DD3D006BFB54 /* MoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B9952400EF1D1AD000C1F28 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayer_Prefix.pch; sourceTree = "<group>"; };
+		5360AB710F9555EE004386E1 /* local.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = local.png; sourceTree = "<group>"; };
+		5360AB720F9555EE004386E1 /* streaming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streaming.png; sourceTree = "<group>"; };
 		538CB4EF0DE329E400931BDA /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		53E4BB050DDB491E0033B3CF /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageView.m; sourceTree = "<group>"; };
-		53E4BB060DDB491E0033B3CF /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageView.h; sourceTree = "<group>"; };
+		53E4BB050DDB491E0033B3CF /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageView.m; path = Classes/MyImageView.m; sourceTree = "<group>"; };
+		53E4BB060DDB491E0033B3CF /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageView.h; path = Classes/MyImageView.h; sourceTree = "<group>"; };
 		53F69CED0DDB4A390051C004 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		848A4F6B0DD3400A00267E4B /* Settings.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Settings.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		848A4F890DD3408800267E4B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		848A4F8A0DD3408800267E4B /* Root.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
+		8487EAA90F8A5E2B00B9E9B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		848A50320DD350F100267E4B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		84D681EF0DD2BDF80056CCDD /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
-		84D681F00DD2BDF80056CCDD /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMovieViewController.h; sourceTree = "<group>"; };
+		849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMovieViewController.m; sourceTree = "<group>"; };
+		849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStreamingMovieViewController.h; sourceTree = "<group>"; };
+		849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStreamingMovieViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60DAAC60DDA11800003B166 /* preview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview.jpg; sourceTree = "<group>"; };
 		D60DAB4F0DDA30630003B166 /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
 		D6629DA20E7EFF4C00E113A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D6629DA30E7EFF4C00E113A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D6854D220E7B42EE00E66CAC /* MyOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOverlayView.h; sourceTree = "<group>"; };
-		D6854D230E7B42EE00E66CAC /* MyOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOverlayView.m; sourceTree = "<group>"; };
+		D6854D220E7B42EE00E66CAC /* MyOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyOverlayView.h; path = Classes/MyOverlayView.h; sourceTree = "<group>"; };
+		D6854D230E7B42EE00E66CAC /* MyOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOverlayView.m; path = Classes/MyOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		848A4F690DD3400A00267E4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,12 +78,10 @@
 			children = (
 				1D3623240D0F684500981E51 /* MoviePlayerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MoviePlayerAppDelegate.m */,
-				84D681EF0DD2BDF80056CCDD /* MyViewController.h */,
-				84D681F00DD2BDF80056CCDD /* MyViewController.m */,
-				53E4BB060DDB491E0033B3CF /* MyImageView.h */,
-				53E4BB050DDB491E0033B3CF /* MyImageView.m */,
-				D6854D220E7B42EE00E66CAC /* MyOverlayView.h */,
-				D6854D230E7B42EE00E66CAC /* MyOverlayView.m */,
+				849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */,
+				849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */,
+				849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */,
+				849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -104,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* MoviePlayer.app */,
-				848A4F6B0DD3400A00267E4B /* Settings.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +110,10 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				53E4BB060DDB491E0033B3CF /* MyImageView.h */,
+				53E4BB050DDB491E0033B3CF /* MyImageView.m */,
+				D6854D220E7B42EE00E66CAC /* MyOverlayView.h */,
+				D6854D230E7B42EE00E66CAC /* MyOverlayView.m */,
 				32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -134,11 +123,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5360AB710F9555EE004386E1 /* local.png */,
+				5360AB720F9555EE004386E1 /* streaming.png */,
+				2B9952400EF1D1AD000C1F28 /* Settings.bundle */,
+				8487EAA80F8A5E2B00B9E9B0 /* SecondView.xib */,
 				53F69CEC0DDB4A390051C004 /* MainWindow.xib */,
 				D60DAB4F0DDA30630003B166 /* Movie.m4v */,
 				D60DAAC60DDA11800003B166 /* preview.jpg */,
-				848A4F890DD3408800267E4B /* Icon.png */,
-				848A4F8A0DD3408800267E4B /* Root.plist */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = Resources;
@@ -170,29 +161,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				848A4F8E0DD3409C00267E4B /* PBXTargetDependency */,
 			);
 			name = MoviePlayer;
 			productName = MoviePlayer;
 			productReference = 1D6058910D05DD3D006BFB54 /* MoviePlayer.app */;
 			productType = "com.apple.product-type.application";
-		};
-		848A4F6A0DD3400A00267E4B /* Settings */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 848A4F6F0DD3400B00267E4B /* Build configuration list for PBXNativeTarget "Settings" */;
-			buildPhases = (
-				848A4F670DD3400A00267E4B /* Resources */,
-				848A4F680DD3400A00267E4B /* Sources */,
-				848A4F690DD3400A00267E4B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Settings;
-			productName = Settings;
-			productReference = 848A4F6B0DD3400A00267E4B /* Settings.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,7 +187,6 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* MoviePlayer */,
-				848A4F6A0DD3400A00267E4B /* Settings */,
 			);
 		};
 /* End PBXProject section */
@@ -224,19 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848A4FA30DD3410D00267E4B /* Settings.bundle in Resources */,
-				D638C73C0DD3B84E00DA5949 /* Icon.png in Resources */,
 				D60DAAC70DDA11800003B166 /* preview.jpg in Resources */,
 				D60DAB500DDA30630003B166 /* Movie.m4v in Resources */,
 				53F69CEE0DDB4A390051C004 /* MainWindow.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		848A4F670DD3400A00267E4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				848A4F8C0DD3408800267E4B /* Root.plist in Resources */,
+				2B9952410EF1D1AD000C1F28 /* Settings.bundle in Resources */,
+				8487EAAA0F8A5E2B00B9E9B0 /* SecondView.xib in Resources */,
+				5360AB730F9555EE004386E1 /* local.png in Resources */,
+				5360AB740F9555EE004386E1 /* streaming.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,28 +215,14 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MoviePlayerAppDelegate.m in Sources */,
-				84D681F10DD2BDF80056CCDD /* MyViewController.m in Sources */,
 				53E4BB070DDB491E0033B3CF /* MyImageView.m in Sources */,
 				D6854D240E7B42EE00E66CAC /* MyOverlayView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		848A4F680DD3400A00267E4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				849C87B00F897A7D005A6DDE /* MyMovieViewController.m in Sources */,
+				849C88110F899862005A6DDE /* MyStreamingMovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		848A4F8E0DD3409C00267E4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 848A4F6A0DD3400A00267E4B /* Settings */;
-			targetProxy = 848A4F8D0DD3409C00267E4B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53F69CEC0DDB4A390051C004 /* MainWindow.xib */ = {
@@ -279,6 +231,14 @@
 				53F69CED0DDB4A390051C004 /* en */,
 			);
 			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		8487EAA80F8A5E2B00B9E9B0 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8487EAA90F8A5E2B00B9E9B0 /* en */,
+			);
+			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,58 +267,7 @@
 				GCC_PREFIX_HEADER = MoviePlayer_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = MoviePlayer;
-			};
-			name = Release;
-		};
-		848A4F6D0DD3400B00267E4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Settings;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		848A4F6E0DD3400B00267E4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = Settings;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};
@@ -373,7 +282,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos3.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
@@ -387,7 +296,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};
@@ -399,15 +308,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		848A4F6F0DD3400B00267E4B /* Build configuration list for PBXNativeTarget "Settings" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				848A4F6D0DD3400B00267E4B /* Debug */,
-				848A4F6E0DD3400B00267E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

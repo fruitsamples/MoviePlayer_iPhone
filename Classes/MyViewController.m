@@ -13,7 +13,7 @@ saves the user settings for the currently
 method so that the view can respond to device
  rotation.
 
-Version: 1.2
+Version: 1.2.1
 
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple Inc.
 ("Apple") in consideration of your agreement to the following terms, and your
@@ -281,8 +281,6 @@ NSString * const OverlayViewTouchNotification = @"overlayViewTouch";
 }
 
 - (void)dealloc {
-
-    [super dealloc];
     
     [mMovieURL release];
     
@@ -301,6 +299,8 @@ NSString * const OverlayViewTouchNotification = @"overlayViewTouch";
                                                   object:mMoviePlayer];
     // free our movie player
     [mMoviePlayer release];
+    
+    [super dealloc];
 }
 
 
