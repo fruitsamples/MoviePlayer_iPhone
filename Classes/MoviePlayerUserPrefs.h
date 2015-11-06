@@ -1,9 +1,8 @@
 /*
  
-     File: MyStreamingMovieViewController.h 
- Abstract: A UIViewController controller subclass that loads the SecondView nib file that contains its view.
- Contains an action method that is called when the Play Movie button is pressed to play the movie.
- Provides a text edit control for the user to enter a movie URL.
+     File: MoviePlayerUserPrefs.h 
+ Abstract: Contains methods to get the application user preferences settings for the movie scaling 
+ mode, control style, background color, repeat mode, application audio session and background image.
   
   Version: 1.4 
   
@@ -50,18 +49,18 @@
  
  */
 
-#import <UIKit/UIKit.h>
-#import "MoviePlayerAppDelegate.h"
-#import "MyMovieViewController.h"
+#import <Foundation/Foundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface MyStreamingMovieViewController : MyMovieViewController <UITextFieldDelegate> 
+@interface MoviePlayerUserPrefs : NSObject 
 {
-@private
-	IBOutlet UITextField *movieURLTextField;
 }
 
-@property (nonatomic,retain) IBOutlet UITextField *movieURLTextField;
-
--(IBAction)playStreamingMovieButtonPressed:(id)sender;
++ (MPMovieScalingMode)scalingModeUserSetting;
++ (MPMovieControlStyle)controlStyleUserSetting;
++ (UIColor *)backgroundColorUserSetting;
++ (MPMovieRepeatMode)repeatModeUserSetting;
++ (BOOL)audioSessionUserSetting;
++ (BOOL)backgroundImageUserSetting;
 
 @end

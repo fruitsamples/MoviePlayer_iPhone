@@ -1,10 +1,14 @@
 /*
 
     File: MyMovieViewController.h 
-Abstract:  A UIViewController controller subclass that loads the MoviePlayer nib
-file that contains its view.
+Abstract:  A UIViewController controller subclass that implements a movie playback view.
+Uses a MyMovieController object to control playback of a movie.
+Adds and removes an overlay view to the view hierarchy. Handles button presses to the
+'Close Movie' button in the overlay view.
+Adds and removes a background view to hide any underlying user interface controls when playing a movie.
+Gets user movie settings preferences by calling the MoviePlayerUserPref methods. Apply these settings to the movie with the MyMovieController singleton.
  
- Version: 1.3 
+ Version: 1.4 
  
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
 Inc. ("Apple") in consideration of your agreement to the following 
@@ -44,7 +48,7 @@ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
 STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
 POSSIBILITY OF SUCH DAMAGE. 
  
-Copyright (C) 2009 Apple Inc. All Rights Reserved. 
+Copyright (C) 2011 Apple Inc. All Rights Reserved. 
  
 
 */
@@ -52,23 +56,38 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-#import "MyOverlayView.h"
+#import "MoviePlayerAppDelegate.h"
+#import "MyOverlayViewController.h"
 
-// Notification string used for touches to the overlay view
-extern NSString * const OverlayViewTouchNotification;
+@class MyImageView;
 
-@interface MyMovieViewController : UIViewController {
+@interface MyMovieViewController : UIViewController 
+{
+@private
+    MPMoviePlayerController *moviePlayerController;
+    
+    IBOutlet MoviePlayerAppDelegate *appDelegate;
 
-    NSURL *movieURL;
-    MyOverlayView *overlayView;
+	IBOutlet MyImageView *imageView;
+	IBOutlet UIImageView *movieBackgroundImageView;
+	IBOutlet UIView *backgroundView;	
+	IBOutlet MyOverlayViewController *overlayController;       
 }
 
-@property (nonatomic, retain) IBOutlet MyOverlayView *overlayView;
-@property (nonatomic, retain) NSURL *movieURL;
+@property (nonatomic, retain) IBOutlet MyImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIImageView *movieBackgroundImageView;
+@property (nonatomic, retain) IBOutlet UIView *backgroundView;
+@property (nonatomic, retain) IBOutlet MyOverlayViewController *overlayController;
 
--(NSURL *)localMovieURL;
--(IBAction)playMovieButtonPressed:(id)sender;
--(IBAction)overlayViewButtonPress:(id)sender;
--(void)overlayViewTouches:(NSNotification *)notification;
+@property (nonatomic, retain) IBOutlet MoviePlayerAppDelegate *appDelegate;
+
+@property (retain) MPMoviePlayerController *moviePlayerController;
+
+- (IBAction)overlayViewCloseButtonPress:(id)sender;
+- (void)viewWillEnterForeground;
+- (void)playMovieFile:(NSURL *)movieFileURL;
+- (void)playMovieStream:(NSURL *)movieFileURL;
 
 @end
+
+

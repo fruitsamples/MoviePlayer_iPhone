@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,19 +12,33 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2B9952410EF1D1AD000C1F28 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B9952400EF1D1AD000C1F28 /* Settings.bundle */; };
-		5360AB730F9555EE004386E1 /* local.png in Resources */ = {isa = PBXBuildFile; fileRef = 5360AB710F9555EE004386E1 /* local.png */; };
-		5360AB740F9555EE004386E1 /* streaming.png in Resources */ = {isa = PBXBuildFile; fileRef = 5360AB720F9555EE004386E1 /* streaming.png */; };
 		53E4BB070DDB491E0033B3CF /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4BB050DDB491E0033B3CF /* MyImageView.m */; };
 		53F69CEE0DDB4A390051C004 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F69CEC0DDB4A390051C004 /* MainWindow.xib */; };
 		8487EAAA0F8A5E2B00B9E9B0 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8487EAA80F8A5E2B00B9E9B0 /* SecondView.xib */; };
 		848A50330DD350F100267E4B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848A50320DD350F100267E4B /* MediaPlayer.framework */; };
 		849C87B00F897A7D005A6DDE /* MyMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */; };
 		849C88110F899862005A6DDE /* MyStreamingMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */; };
-		D60DAAC70DDA11800003B166 /* preview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60DAAC60DDA11800003B166 /* preview.jpg */; };
+		AF475CE8136DD99100A47DB7 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 538CB4EF0DE329E400931BDA /* ReadMe.txt */; };
+		AF5D8391136D28E100A24F8A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D8389136D28E100A24F8A /* Icon-72.png */; };
+		AF5D8392136D28E100A24F8A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838A136D28E100A24F8A /* Icon-Small-50.png */; };
+		AF5D8393136D28E100A24F8A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838B136D28E100A24F8A /* Icon-Small.png */; };
+		AF5D8394136D28E100A24F8A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838C136D28E100A24F8A /* Icon-Small@2x.png */; };
+		AF5D8395136D28E100A24F8A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838D136D28E100A24F8A /* Icon.png */; };
+		AF5D8396136D28E100A24F8A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838E136D28E100A24F8A /* Icon@2x.png */; };
+		AF5D8397136D28E100A24F8A /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = AF5D838F136D28E100A24F8A /* iTunesArtwork */; };
+		AF5D8398136D28E100A24F8A /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D8390136D28E100A24F8A /* Placeholder.png */; };
+		AF796CD3136CF60D0013E770 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF796CCF136CF60D0013E770 /* MainWindow-iPad.xib */; };
+		AF796CD4136CF60D0013E770 /* SecondView-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF796CD1136CF60D0013E770 /* SecondView-iPad.xib */; };
+		AF81F56B131DB400005BFDAF /* MyLocalMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF81F56A131DB400005BFDAF /* MyLocalMovieViewController.m */; };
+		AFAF4A70131874E7003DCBFA /* MyOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF4A6E131874E7003DCBFA /* MyOverlayViewController.m */; };
+		AFB8802A1319F22400654615 /* MoviePlayerUserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB880281319F22400654615 /* MoviePlayerUserPrefs.m */; };
+		AFCDA4A81371C5C20097BFDE /* local.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCDA4A41371C5C20097BFDE /* local.png */; };
+		AFCDA4A91371C5C20097BFDE /* movieBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFCDA4A51371C5C20097BFDE /* movieBackground.jpg */; };
+		AFCDA4AA1371C5C20097BFDE /* preview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFCDA4A61371C5C20097BFDE /* preview.jpg */; };
+		AFCDA4AB1371C5C20097BFDE /* streaming.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCDA4A71371C5C20097BFDE /* streaming.png */; };
 		D60DAB500DDA30630003B166 /* Movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = D60DAB4F0DDA30630003B166 /* Movie.m4v */; };
 		D6629DA40E7EFF4C00E113A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6629DA20E7EFF4C00E113A3 /* CoreGraphics.framework */; };
 		D6629DA50E7EFF4C00E113A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6629DA30E7EFF4C00E113A3 /* QuartzCore.framework */; };
-		D6854D240E7B42EE00E66CAC /* MyOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6854D230E7B42EE00E66CAC /* MyOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,28 +47,43 @@
 		1D3623250D0F684500981E51 /* MoviePlayerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* MoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		2B9952400EF1D1AD000C1F28 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayer_Prefix.pch; sourceTree = "<group>"; };
-		5360AB710F9555EE004386E1 /* local.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = local.png; sourceTree = "<group>"; };
-		5360AB720F9555EE004386E1 /* streaming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streaming.png; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviePlayer_Prefix.pch; path = ../MoviePlayer_Prefix.pch; sourceTree = "<group>"; };
 		538CB4EF0DE329E400931BDA /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		53E4BB050DDB491E0033B3CF /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageView.m; path = Classes/MyImageView.m; sourceTree = "<group>"; };
 		53E4BB060DDB491E0033B3CF /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageView.h; path = Classes/MyImageView.h; sourceTree = "<group>"; };
 		53F69CED0DDB4A390051C004 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		8487EAA90F8A5E2B00B9E9B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		848A50320DD350F100267E4B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMovieViewController.h; sourceTree = "<group>"; };
-		849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMovieViewController.m; sourceTree = "<group>"; };
-		849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStreamingMovieViewController.h; sourceTree = "<group>"; };
-		849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStreamingMovieViewController.m; sourceTree = "<group>"; };
+		849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyMovieViewController.h; path = Classes/MyMovieViewController.h; sourceTree = "<group>"; };
+		849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyMovieViewController.m; path = Classes/MyMovieViewController.m; sourceTree = "<group>"; };
+		849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyStreamingMovieViewController.h; path = Classes/MyStreamingMovieViewController.h; sourceTree = "<group>"; };
+		849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyStreamingMovieViewController.m; path = Classes/MyStreamingMovieViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D60DAAC60DDA11800003B166 /* preview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview.jpg; sourceTree = "<group>"; };
+		AF5D8389136D28E100A24F8A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		AF5D838A136D28E100A24F8A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		AF5D838B136D28E100A24F8A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		AF5D838C136D28E100A24F8A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		AF5D838D136D28E100A24F8A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AF5D838E136D28E100A24F8A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		AF5D838F136D28E100A24F8A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		AF5D8390136D28E100A24F8A /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		AF796CD0136CF60D0013E770 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		AF796CD2136CF60D0013E770 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/SecondView-iPad.xib"; sourceTree = "<group>"; };
+		AF81F569131DB400005BFDAF /* MyLocalMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocalMovieViewController.h; path = Classes/MyLocalMovieViewController.h; sourceTree = "<group>"; };
+		AF81F56A131DB400005BFDAF /* MyLocalMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocalMovieViewController.m; path = Classes/MyLocalMovieViewController.m; sourceTree = "<group>"; };
+		AFAF4A6E131874E7003DCBFA /* MyOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOverlayViewController.m; path = Classes/MyOverlayViewController.m; sourceTree = "<group>"; };
+		AFAF4A6F131874E7003DCBFA /* MyOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyOverlayViewController.h; path = Classes/MyOverlayViewController.h; sourceTree = "<group>"; };
+		AFB880281319F22400654615 /* MoviePlayerUserPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerUserPrefs.m; sourceTree = "<group>"; };
+		AFB880291319F22400654615 /* MoviePlayerUserPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerUserPrefs.h; sourceTree = "<group>"; };
+		AFCDA4A41371C5C20097BFDE /* local.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = local.png; sourceTree = "<group>"; };
+		AFCDA4A51371C5C20097BFDE /* movieBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = movieBackground.jpg; sourceTree = "<group>"; };
+		AFCDA4A61371C5C20097BFDE /* preview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview.jpg; sourceTree = "<group>"; };
+		AFCDA4A71371C5C20097BFDE /* streaming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = streaming.png; sourceTree = "<group>"; };
 		D60DAB4F0DDA30630003B166 /* Movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie.m4v; sourceTree = "<group>"; };
 		D6629DA20E7EFF4C00E113A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D6629DA30E7EFF4C00E113A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D6854D220E7B42EE00E66CAC /* MyOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyOverlayView.h; path = Classes/MyOverlayView.h; sourceTree = "<group>"; };
-		D6854D230E7B42EE00E66CAC /* MyOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOverlayView.m; path = Classes/MyOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +107,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* MoviePlayerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MoviePlayerAppDelegate.m */,
-				849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */,
-				849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */,
-				849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */,
-				849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */,
+				29B97315FDCFA39411CA2CEA /* View Controllers */,
+				AFB87F7D13199B6900654615 /* User Settings Preferences */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -99,7 +126,7 @@
 			children = (
 				538CB4EF0DE329E400931BDA /* ReadMe.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				AFB87F8013199B8F00654615 /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -107,29 +134,29 @@
 			name = CustomTemplate;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+		29B97315FDCFA39411CA2CEA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				53E4BB060DDB491E0033B3CF /* MyImageView.h */,
-				53E4BB050DDB491E0033B3CF /* MyImageView.m */,
-				D6854D220E7B42EE00E66CAC /* MyOverlayView.h */,
-				D6854D230E7B42EE00E66CAC /* MyOverlayView.m */,
-				32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				849C87AE0F897A7D005A6DDE /* MyMovieViewController.h */,
+				849C87AF0F897A7D005A6DDE /* MyMovieViewController.m */,
+				AFAF2850130E15E80023B78D /* Local Movie View */,
+				AFAF284D130E15D90023B78D /* Streaming Movie View */,
+				AFAF28D7130E491F0023B78D /* Overlay View */,
 			);
-			name = "Other Sources";
+			name = "View Controllers";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5360AB710F9555EE004386E1 /* local.png */,
-				5360AB720F9555EE004386E1 /* streaming.png */,
+				AF5D8388136D28E100A24F8A /* images */,
+				AF796CCF136CF60D0013E770 /* MainWindow-iPad.xib */,
+				AF796CD1136CF60D0013E770 /* SecondView-iPad.xib */,
 				2B9952400EF1D1AD000C1F28 /* Settings.bundle */,
 				8487EAA80F8A5E2B00B9E9B0 /* SecondView.xib */,
 				53F69CEC0DDB4A390051C004 /* MainWindow.xib */,
 				D60DAB4F0DDA30630003B166 /* Movie.m4v */,
-				D60DAAC60DDA11800003B166 /* preview.jpg */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = Resources;
@@ -145,6 +172,81 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF52D953131C510B00C4E681 /* Image View */ = {
+			isa = PBXGroup;
+			children = (
+				53E4BB060DDB491E0033B3CF /* MyImageView.h */,
+				53E4BB050DDB491E0033B3CF /* MyImageView.m */,
+			);
+			name = "Image View";
+			sourceTree = "<group>";
+		};
+		AF5D8388136D28E100A24F8A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AFCDA4A41371C5C20097BFDE /* local.png */,
+				AFCDA4A51371C5C20097BFDE /* movieBackground.jpg */,
+				AFCDA4A61371C5C20097BFDE /* preview.jpg */,
+				AFCDA4A71371C5C20097BFDE /* streaming.png */,
+				AF5D8389136D28E100A24F8A /* Icon-72.png */,
+				AF5D838A136D28E100A24F8A /* Icon-Small-50.png */,
+				AF5D838B136D28E100A24F8A /* Icon-Small.png */,
+				AF5D838C136D28E100A24F8A /* Icon-Small@2x.png */,
+				AF5D838D136D28E100A24F8A /* Icon.png */,
+				AF5D838E136D28E100A24F8A /* Icon@2x.png */,
+				AF5D838F136D28E100A24F8A /* iTunesArtwork */,
+				AF5D8390136D28E100A24F8A /* Placeholder.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		AFAF284D130E15D90023B78D /* Streaming Movie View */ = {
+			isa = PBXGroup;
+			children = (
+				849C880F0F899862005A6DDE /* MyStreamingMovieViewController.h */,
+				849C88100F899862005A6DDE /* MyStreamingMovieViewController.m */,
+			);
+			name = "Streaming Movie View";
+			sourceTree = "<group>";
+		};
+		AFAF2850130E15E80023B78D /* Local Movie View */ = {
+			isa = PBXGroup;
+			children = (
+				AF81F569131DB400005BFDAF /* MyLocalMovieViewController.h */,
+				AF81F56A131DB400005BFDAF /* MyLocalMovieViewController.m */,
+				AF52D953131C510B00C4E681 /* Image View */,
+			);
+			name = "Local Movie View";
+			sourceTree = "<group>";
+		};
+		AFAF28D7130E491F0023B78D /* Overlay View */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF4A6F131874E7003DCBFA /* MyOverlayViewController.h */,
+				AFAF4A6E131874E7003DCBFA /* MyOverlayViewController.m */,
+			);
+			name = "Overlay View";
+			sourceTree = "<group>";
+		};
+		AFB87F7D13199B6900654615 /* User Settings Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				AFB880291319F22400654615 /* MoviePlayerUserPrefs.h */,
+				AFB880281319F22400654615 /* MoviePlayerUserPrefs.m */,
+			);
+			name = "User Settings Preferences";
+			sourceTree = "<group>";
+		};
+		AFB87F8013199B8F00654615 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MoviePlayer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +274,12 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MoviePlayer" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -196,13 +302,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D60DAAC70DDA11800003B166 /* preview.jpg in Resources */,
 				D60DAB500DDA30630003B166 /* Movie.m4v in Resources */,
 				53F69CEE0DDB4A390051C004 /* MainWindow.xib in Resources */,
 				2B9952410EF1D1AD000C1F28 /* Settings.bundle in Resources */,
 				8487EAAA0F8A5E2B00B9E9B0 /* SecondView.xib in Resources */,
-				5360AB730F9555EE004386E1 /* local.png in Resources */,
-				5360AB740F9555EE004386E1 /* streaming.png in Resources */,
+				AF796CD3136CF60D0013E770 /* MainWindow-iPad.xib in Resources */,
+				AF796CD4136CF60D0013E770 /* SecondView-iPad.xib in Resources */,
+				AF5D8391136D28E100A24F8A /* Icon-72.png in Resources */,
+				AF5D8392136D28E100A24F8A /* Icon-Small-50.png in Resources */,
+				AF5D8393136D28E100A24F8A /* Icon-Small.png in Resources */,
+				AF5D8394136D28E100A24F8A /* Icon-Small@2x.png in Resources */,
+				AF5D8395136D28E100A24F8A /* Icon.png in Resources */,
+				AF5D8396136D28E100A24F8A /* Icon@2x.png in Resources */,
+				AF5D8397136D28E100A24F8A /* iTunesArtwork in Resources */,
+				AF5D8398136D28E100A24F8A /* Placeholder.png in Resources */,
+				AF475CE8136DD99100A47DB7 /* ReadMe.txt in Resources */,
+				AFCDA4A81371C5C20097BFDE /* local.png in Resources */,
+				AFCDA4A91371C5C20097BFDE /* movieBackground.jpg in Resources */,
+				AFCDA4AA1371C5C20097BFDE /* preview.jpg in Resources */,
+				AFCDA4AB1371C5C20097BFDE /* streaming.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,10 +333,12 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MoviePlayerAppDelegate.m in Sources */,
-				53E4BB070DDB491E0033B3CF /* MyImageView.m in Sources */,
-				D6854D240E7B42EE00E66CAC /* MyOverlayView.m in Sources */,
 				849C87B00F897A7D005A6DDE /* MyMovieViewController.m in Sources */,
 				849C88110F899862005A6DDE /* MyStreamingMovieViewController.m in Sources */,
+				53E4BB070DDB491E0033B3CF /* MyImageView.m in Sources */,
+				AFAF4A70131874E7003DCBFA /* MyOverlayViewController.m in Sources */,
+				AFB8802A1319F22400654615 /* MoviePlayerUserPrefs.m in Sources */,
+				AF81F56B131DB400005BFDAF /* MyLocalMovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +361,22 @@
 			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
+		AF796CCF136CF60D0013E770 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF796CD0136CF60D0013E770 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		AF796CD1136CF60D0013E770 /* SecondView-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF796CD2136CF60D0013E770 /* en */,
+			);
+			name = "SecondView-iPad.xib";
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -248,13 +384,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoviePlayer_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = MoviePlayer;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -262,12 +405,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoviePlayer_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = MoviePlayer;
-				SDKROOT = iphoneos3.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -275,15 +424,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -291,12 +445,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

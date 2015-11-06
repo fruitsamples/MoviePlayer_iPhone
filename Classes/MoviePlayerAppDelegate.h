@@ -3,10 +3,8 @@
     File: MoviePlayerAppDelegate.h 
 Abstract:  A simple UIApplication delegate class that adds the MyMovieViewController
 view to the window as a subview. 
-Also sets the application settings based on the defaults in the application
-bundle.
  
- Version: 1.3 
+ Version: 1.4 
  
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
 Inc. ("Apple") in consideration of your agreement to the following 
@@ -46,27 +44,22 @@ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
 STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
 POSSIBILITY OF SUCH DAMAGE. 
  
-Copyright (C) 2009 Apple Inc. All Rights Reserved. 
+Copyright (C) 2011 Apple Inc. All Rights Reserved. 
  
 
 */
 
 #import <UIKit/UIKit.h>
-#import "MyMovieViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface MoviePlayerAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-	
-	UIWindow *window;
-	MPMoviePlayerController *moviePlayer;
-    UITabBarController *tabBarController;
+@interface MoviePlayerAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> 
+{
+	IBOutlet UIWindow *window;
+    IBOutlet UITabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
-@property (readwrite, retain) MPMoviePlayerController *moviePlayer;
-
--(void)initAndPlayMovie:(NSURL *)movieURL;
--(void)setMoviePlayerUserSettings;
 
 @end
 

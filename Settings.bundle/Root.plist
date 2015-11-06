@@ -32,7 +32,7 @@
 			<key>Key</key>
 			<string>scalingMode</string>
 			<key>DefaultValue</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -45,20 +45,20 @@
 			</array>
 			<key>Titles</key>
 			<array>
-				<string>Standard</string>
-				<string>Volume Only</string>
-				<string>Hidden</string>
+				<string>None</string>
+				<string>Embedded</string>
+				<string>Fullscreen</string>
 			</array>
 			<key>Title</key>
-			<string>Controls</string>
+			<string>Control Style</string>
 			<key>Key</key>
-			<string>controlMode</string>
+			<string>controlStyle</string>
 			<key>DefaultValue</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Key</key>
 			<string>backgroundColor</string>
 			<key>Title</key>
@@ -101,6 +101,46 @@
 				<integer>13</integer>
 				<integer>14</integer>
 			</array>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>useMovieBackgroundImage</string>
+			<key>Title</key>
+			<string>Background Image</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>None</string>
+				<string>One</string>
+			</array>
+			<key>Title</key>
+			<string>Repeat</string>
+			<key>Key</key>
+			<string>repeatMode</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>useApplicationAudioSession</string>
+			<key>Title</key>
+			<string>App Audio Session</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
 		</dict>
 	</array>
 	<key>Title</key>

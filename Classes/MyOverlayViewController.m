@@ -1,9 +1,8 @@
 /*
  
-     File: MyStreamingMovieViewController.h 
- Abstract: A UIViewController controller subclass that loads the SecondView nib file that contains its view.
- Contains an action method that is called when the Play Movie button is pressed to play the movie.
- Provides a text edit control for the user to enter a movie URL.
+     File: MyOverlayViewController.m 
+ Abstract: A UIViewController controller subclass that implements an overlay view to display movie load state and playback state and a button to close the active movie.
+ Contains an action method that is called when the 'Close Movie' button is pressed to close the movie.
   
   Version: 1.4 
   
@@ -50,18 +49,25 @@
  
  */
 
-#import <UIKit/UIKit.h>
-#import "MoviePlayerAppDelegate.h"
-#import "MyMovieViewController.h"
+#import "MyOverlayViewController.h"
 
-@interface MyStreamingMovieViewController : MyMovieViewController <UITextFieldDelegate> 
+@implementation MyOverlayViewController
+
+@synthesize moviePlaybackStateText, movieLoadStateText;
+
+#pragma mark -
+#pragma mark Display Movie Status Strings
+
+/* Movie playback state display string. */
+-(void)setPlaybackStateDisplayString:(NSString *)playBackText
 {
-@private
-	IBOutlet UITextField *movieURLTextField;
+	self.moviePlaybackStateText.text = playBackText;
 }
 
-@property (nonatomic,retain) IBOutlet UITextField *movieURLTextField;
-
--(IBAction)playStreamingMovieButtonPressed:(id)sender;
+/* Movie load state display string. */
+-(void)setLoadStateDisplayString:(NSString *)loadStateText;
+{
+	self.movieLoadStateText.text = loadStateText;
+}
 
 @end
