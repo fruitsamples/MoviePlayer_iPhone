@@ -158,9 +158,9 @@ NSString *kBackgroundColorKey	= @"backgroundColor";
         
         // since no default values have been set, create them here
         NSDictionary *appDefaults =  [NSDictionary dictionaryWithObjectsAndKeys:
-                                      scalingModeDefault, kScalingModeKey,
-                                      controlModeDefault, kControlModeKey,
-                                      backgroundColorDefault, kBackgroundColorKey,
+                                      scalingModeDefault, kScalingModeKey,
+                                      controlModeDefault, kControlModeKey,
+                                      backgroundColorDefault, kBackgroundColorKey,
                                       nil];
         
         [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
